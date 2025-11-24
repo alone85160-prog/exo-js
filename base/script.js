@@ -45,6 +45,55 @@ if (hour >= 6 && hour < 12){
 if (hour >= 12 && hour < 20) 
     console.log("Nous sommes l'apres-midi")
 
-if (hour >= 20 && hour < 6 ) 
+if (hour >= 18 && hour < 21 ) 
     console.log("Nous sommes le soir")
 
+if (hour >= 21 && hour < 6 ) 
+    console.log("Nous sommes la nuit")
+
+
+// Exercice 5 
+
+
+let choice = 2
+
+if (choice === 1) { 
+    console.log("Insert")
+}
+if (choice === 2) {
+    console.log("Delete")
+}
+if (choice === 3) {
+    console.log("Display")
+}
+if (choice === 4) {
+    console.log("This choice doesn't exist")
+}
+
+// Exercice 6 
+
+let number = 50
+if(number % 3 === 0 && number % 5 === 0) {
+    console.log("Oui, c'est bien un multiple de 3 et 5");
+
+} else {
+    console.log("Non, ce n'est pas le multiple de 3 et 5");
+}
+
+// Exercice 7 
+
+
+for(let i = 44000 ; i <= 44999; i++) {
+
+    console.log(i)
+}
+
+// Exercice 8 
+
+for(let display = 0 ; display <= 20; display+=2) {
+
+    console.log(display)
+    if( display === 10) {
+        console.log(display)
+    }
+}
