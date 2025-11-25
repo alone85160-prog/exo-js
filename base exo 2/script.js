@@ -17,6 +17,12 @@ console.log(a*b)
 // Exercice 3
 
 let body = prompt ("Veuillez entrer un nombre")
-if(body > 10){
-        console.log("INFERIEUR")
+if(body <= 10){
+        console.log("Plus petit ou égal a 10")
 }
+else if(body => 10){
+        console.log("Plus grand que 10")
+}
+
+// Exercice 4
+
