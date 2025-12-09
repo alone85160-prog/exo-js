@@ -3,7 +3,7 @@ const button = document.querySelector("button");
 button.addEventListener("click", (event) => {
     event.preventDefault();
 
-    // VALIDATION DU NOM
+    // Nom
     const lastName = document.getElementById("nom");
     const errorLastName = lastName.nextElementSibling;
 
@@ -17,7 +17,7 @@ button.addEventListener("click", (event) => {
         lastName.classList.remove("error-input");
     }
 
-    // VALIDATION DU PRÉNOM
+    // Prenom
     const firstName = document.getElementById("firstname");
     const errorFirstName = firstName.nextElementSibling;
 
@@ -31,7 +31,7 @@ button.addEventListener("click", (event) => {
         firstName.classList.remove("error-input");
     }
 
-    // VALIDATION DU MAIL
+    // Mail
     const email = document.getElementById("Mail");
     const errorEmail = email.nextElementSibling;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -46,7 +46,7 @@ button.addEventListener("click", (event) => {
         email.classList.add("error-input");
     }
 
-    // VALIDATION DU MOT DE PASSE
+    // Mot de passe
     const motDePasse = document.getElementById("password");
     const errorMotDePasse = motDePasse.nextElementSibling;
 
@@ -63,7 +63,7 @@ button.addEventListener("click", (event) => {
         motDePasse.classList.add("error-input");
     }
 
-    // VALIDATION DE L'AGE
+    // Age
     const age = document.getElementById("age");
     const errorAge = age.nextElementSibling;
 
