@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="welcome">
+        <h2 class="welcome__title">
+            Formulaire d'inscription
+        </h2>
+
+        <form class="homeclass">
+            <div class="name">
+                <label for="nom"> Nom :</label><br>
+                <input type="text" id="nom" name="nom" class="champ" placeholder="Indiquez votre Nom ">
+                <span class="error-txt"> Format invalide </span>
+            </div>
+            <div class="firstname">
+                <label for="firstname"> Prénom :</label><br>
+                <input type="text" id="firstname" name="firstname" class="champ" placeholder="Indiquez votre Prénom ">
+                <span class="error-txt"> Format invalide </span>
+            </div>
+            <div class="MailSection">
+                <label for="MailSection"> Email :</label><br>
+                <input type="text" id="Mail" name="Mail" class="champ" placeholder="Indiquez votre Email">
+                <span class="error-txt"> Format invalide </span>
+            </div>
+            <div class="password">
+                <label for="password"> Mot de passe :</label><br>
+                <input type="text" id="password" name="password" class="champ"
+                    placeholder="Indiquez votre mot de passe ">
+                <span class="error-txt"> Format invalide </span>
+            </div>
+            <div class="age">
+                <label for="age"> Age :</label><br>
+                <input type="number" id="age" name="age" class="champ" placeholder="Indiquez votre Age">
+                <span class="error-txt"> Format invalide </span>
+            </div>
+            <button>
+                <p class="buttoncontent">
+                    <b>S'inscrire</b>
+                </p>
+            </button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
