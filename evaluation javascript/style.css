@@ -1,39 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.4rem;
 }
 
-section {
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.grid-produits {
-    display: flex;
-    width: 600px;
-    margin: 10px;
-}
-
-h1 {
-    font-size: 40px;
-}
 
 .shopcontainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    gap: 25px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.panier-section {
+@media (max-width: 900px) {
+    .shopcontainer {
+        flex-direction: column;
+    }
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+.grid-produits {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.panier-classlist {
-    background-color: yellow;
+.carte-produit {
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.carte-produit img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.carte-produit h3 {
+    margin-bottom: 5px;
+}
+
+.carte-produit p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+button {
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #1a68d1;
+}
+
+button:hover {
+    background: #1a68d1;
+    padding: 12px 18px;
+    background-color: aqua;
+}
+
+
+#panier-section {
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.panier-classlist p {
+    text-align: center;
+    color: #777;
+}
+
+.ligne-panier {
+    display: grid;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.ligne-panier button {
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.ligne-panier button:hover {
+    background: #c0392b;
+}
+
+
+.total-section {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.commande-box {
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.commande-box input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.commande-box input:focus {
+    border-color: black;
+}
+
+
+.success {
+    font-weight: bold;
+}
+
+.error {
+    font-weight: bold;
+}
+
+
+@media (max-width: 900px) {
+    .shopcontainer {
+        grid-template-columns: 1fr;
+    }
 }
