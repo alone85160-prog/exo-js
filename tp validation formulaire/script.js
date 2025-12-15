@@ -1,7 +1,9 @@
-const button = document.querySelector("button");
+const form = document.querySelector("form");
 
-button.addEventListener("click", (event) => {
+form.addEventListener("submit", (event) => {
     event.preventDefault();
+
+    form.submit()
 
     // Nom
     const lastName = document.getElementById("nom");
@@ -13,7 +15,6 @@ button.addEventListener("click", (event) => {
         lastName.classList.add("error-input");
     } else {
         errorLastName.textContent = "";
-        lastName.classList.remove("error-input");
         lastName.classList.remove("error-input");
     }
 
@@ -28,7 +29,6 @@ button.addEventListener("click", (event) => {
     } else {
         errorFirstName.textContent = "";
         firstName.classList.remove("error-input");
-        firstName.classList.remove("error-input");
     }
 
     // Mail
@@ -38,7 +38,6 @@ button.addEventListener("click", (event) => {
 
     if (emailRegex.test(email.value)) {
         errorEmail.textContent = "";
-        email.classList.remove("error-input");
         email.classList.remove("error-input");
     } else {
         errorEmail.textContent = "Veuillez entrer une adresse e-mail valide.";
@@ -54,7 +53,6 @@ button.addEventListener("click", (event) => {
 
     if (motDePasseRegex.test(motDePasse.value)) {
         errorMotDePasse.textContent = "";
-        motDePasse.classList.remove("error-input");
         motDePasse.classList.remove("error-input");
     } else {
         errorMotDePasse.textContent =
@@ -73,7 +71,6 @@ button.addEventListener("click", (event) => {
         age.classList.add("error-input");
     } else {
         errorAge.textContent = "";
-        age.classList.remove("error-input");
         age.classList.remove("error-input");
     }
 });
