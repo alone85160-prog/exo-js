@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-produits {
+    display: flex;
+    width: 600px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.shopcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.panier-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panier-classlist {
+    background-color: yellow;
+}
